@@ -1,15 +1,28 @@
-# Autonomous Vehicle Project
+<!-- Project Banner -->
+<p align="center">
+  <img src="Traffic signs Detection And Recognition/images/project.jpg" alt="Project Banner" width="70%"/>
+</p>
 
-This repository contains the source code for a comprehensive autonomous vehicle project, developed as part of a PFA (Projet de Fin d'Année). The project integrates several key computer vision and deep learning modules to enable autonomous navigation capabilities.
+# 🚗 Autonomous Vehicle Project
 
-## Features
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/sofian2022/Projet_PFA-Autonomous_Vehicles)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-- **Real-time Object Detection**: Detects objects such as cars, pedestrians, and cyclists using a pre-trained MobileNet SSD model.
-- **License Plate Recognition**: Detects license plates using YOLOv8, recognizes characters with EasyOCR, and checks vehicle status against a database.
-- **Traffic Sign Recognition**: Classifies traffic signs using a CNN trained on the GTSRB dataset, with a GUI for easy testing.
-- **Hardware Integration**: Scripts for controlling hardware components (camera, motors, servos, ultrasonic sensors, LEDs) for physical prototyping.
+Welcome to the Autonomous Vehicle Project! This repository contains a modular, multi-component system for smart vehicle perception and control, developed as part of a PFA (Projet de Fin d'Année). It integrates state-of-the-art computer vision and deep learning for real-time object detection, license plate recognition, and traffic sign classification, with hardware control for a physical prototype.
 
-## Project Structure
+---
+
+## ✨ Features
+
+| 🚦  | **Traffic Sign Recognition**   | Classifies traffic signs using a CNN trained on the GTSRB dataset, with a user-friendly GUI.             |
+| --- | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| 🔍  | **Real-time Object Detection** | Detects objects (cars, pedestrians, cyclists) using a pre-trained MobileNet SSD model.                   |
+| 🏷️  | **License Plate Recognition**  | Detects license plates with YOLOv8, recognizes characters with EasyOCR, and checks status in a database. |
+| 🛠️  | **Hardware Integration**       | Scripts for controlling camera, motors, servos, ultrasonic sensors, and LEDs.                            |
+
+---
+
+## 🗂️ Project Structure
 
 ```
 .
@@ -52,9 +65,11 @@ This repository contains the source code for a comprehensive autonomous vehicle 
 └── requirements.txt
 ```
 
-## Technologies Used
+---
 
-- **Python**
+## 🛠️ Technologies Used
+
+- **Python 3**
 - **PyTorch** (YOLOv8 for license plate detection)
 - **TensorFlow/Keras** (traffic sign recognition)
 - **Caffe** (object detection model)
@@ -65,7 +80,9 @@ This repository contains the source code for a comprehensive autonomous vehicle 
 - **Tkinter** (traffic sign classifier GUI)
 - **NumPy**, **Matplotlib**, **ultralytics**, **requests**
 
-## Setup
+---
+
+## 🚀 Quick Start
 
 1. **Clone the repository:**
    ```bash
@@ -86,7 +103,9 @@ This repository contains the source code for a comprehensive autonomous vehicle 
    - Update connection details in `LIcense Plate Number Detection/db_connector.py` if needed.
    - Populate the database with `add_sample_vehicles.py` if desired.
 
-## Usage
+---
+
+## 🖥️ Usage
 
 - **Object Detection:**
 
@@ -112,6 +131,17 @@ This repository contains the source code for a comprehensive autonomous vehicle 
 - **Hardware Tests:**
   Scripts in `Materiels_Test/` are for Raspberry Pi or similar hardware with the appropriate components.
 
-## License
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="Traffic signs Detection And Recognition/images/predictions.png" alt="Traffic Sign Predictions" width="45%"/>
+  <img src="Traffic signs Detection And Recognition/images/GUI.jpg" alt="Traffic Sign GUI" width="45%"/>
+</p>
+
+---
+
+## 📄 License
 
 This project is open-source. Please credit the original authors if you use or modify this code.
