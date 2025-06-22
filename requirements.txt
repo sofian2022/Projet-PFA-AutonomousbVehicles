@@ -1,0 +1,12 @@
+opencv-python
+numpy
+matplotlib
+ultralytics
+easyocr
+torch
+torchvision
+torchaudio
+requests
+tensorflow
+Pillow
+pymongo 
